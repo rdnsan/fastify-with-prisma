@@ -1,0 +1,30 @@
+{
+  "name": "fastify-prisma",
+  "version": "1.0.0",
+  "description": "Explore Fastify with Prisma",
+  "main": "index.js",
+  "repository": "https://github.com/rdnsan/fastify-prisma.git",
+  "author": "Ridwan Ikhsan <ridwan.jsx@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "tsnd --respawn --transpile-only --exit-child ./src/app.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1",
+    "prisma": "^4.5.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.5.0",
+    "fastify": "^4.9.2",
+    "fastify-jwt": "^4.2.0",
+    "fastify-swagger": "^5.2.0",
+    "fastify-zod": "^1.2.0",
+    "zod": "^3.19.1",
+    "zod-to-json-schema": "^3.18.1"
+  }
+}
