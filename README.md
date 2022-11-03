@@ -1,4 +1,4 @@
-# Fastify with Prisma
+# Fastify with Prisma :sparkles:
 
 ## What are we using?
 
@@ -8,17 +8,13 @@
 - Swagger - API Docs
 - TypeScript
 - PostgreSQL - Database
+- Docker
 
-### dependencies
-
-```sh
-  yarn add @prisma/client fastify fastify-zod zod zod-to-json-schema fastify-jwt fastify-swagger
-```
-
-### devDependencies
+### Setup Database
 
 ```sh
-  yarn add ts-node-dev typescript @types/node eslint prettier prisma -D
+  cd database
+  docker-compose up -d
 ```
 
 ### Initialise prisma
@@ -31,4 +27,18 @@
 
 ```sh
   yarn prisma migrate dev --name init
+```
+
+---
+
+### dependencies
+
+```sh
+  @prisma/client fastify fastify-zod @fastify/jwt @fastify/swagger zod zod-to-json-schema
+```
+
+### devDependencies
+
+```sh
+  ts-node-dev typescript @types/node eslint prettier prisma
 ```
